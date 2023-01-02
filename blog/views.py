@@ -1,4 +1,4 @@
-from django.shortcuts import generic
+from django.views import generic
 from .models import Post
 
 class PostList(generic.ListView):
