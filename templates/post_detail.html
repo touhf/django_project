@@ -1,12 +1,5 @@
 {% extends 'base.html' %} {% block content %}
 
-{% load crispy_forms_tags %}
-
-<form method="post" style="margin-top: 1.3em;">
-  {{ comment_form | crispy }}
-  {% csrf_token %}
-  <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
-</form>
 
 <div class="container">
     <div class="row">
@@ -58,6 +51,16 @@
   {% endblock content %}
     <!--</div>
   </div>
+
+  leaving this here cuz it broke something and i am not even sure i want them to get crispy lmao
+
+  {% load crispy_forms_tags %}
+
+<form method="post" style="margin-top: 1.3em;">
+  {{ comment_form | crispy }}
+  {% csrf_token %}
+  <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
+</form>
 
 % endblock content %
 <-->
