@@ -2,6 +2,7 @@ from django.views import generic
 from .forms import CommentForm
 from .models import Post
 from django.shortcuts import render, get_object_or_404
+from django.views.generic import TemplateView
 
 
 class PostList(generic.ListView):
@@ -36,3 +37,7 @@ def post_detail(request, slug):
                                            'comments': comments,
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
+
+
+class AboutPageView(TemplateView):
+    template_name = "about.html"
