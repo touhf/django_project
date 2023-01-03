@@ -6,7 +6,10 @@
         <div class="card-body">
           <h1>{% block title %} About {% endblock title %}</h1>
           <p class=" text-muted">additional information about project</p>
-          <img src="https://www.idlememe.com/wp-content/uploads/2021/08/angry-cat-meme-idlememe-300x278.jpg" alt="angry cat">
+          <p>
+            {% load static %}
+            <img src="{% static "blog/media/angry-cat.jpg" %}" alt="about_picture" />
+          </p>
           <p class="card-text ">Just a picture of cat for now</p>
         </div>
       </div>
