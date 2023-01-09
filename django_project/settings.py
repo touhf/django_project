@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'crispy_forms'
+    'crispy_forms',
+    'django_summernote'
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,5 @@ MEDIA_URL = '/media/'
 
 # path where media is stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
